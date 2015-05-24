@@ -1,12 +1,12 @@
 {
-  "name": "chromecast-player",
+  "name": "jtChromecast-player",
   "version": "0.2.2",
-  "description": "simple chromecast player",
+  "description": "Simple Chromecast player. Forked from xat/chromecast-player and added support to switch off/on the subtitles",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Simon Kusterer",
+  "author": "Simon Kusterer, honato11",
   "license": "MIT",
   "dependencies": {
     "castv2-client": "0.0.8",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:xat/chromecast-player.git"
+    "url": "https://github.com/honato11/chromecast-player"
   },
   "keywords": [
     "chromecast",
@@ -29,7 +29,7 @@
     "video"
   ],
   "bugs": {
-    "url": "https://github.com/xat/chromecast-player/issues"
+    "url": "https://github.com/honato11/chromecast-player/issues"
   },
-  "homepage": "https://github.com/xat/chromecast-player"
+  "homepage": "https://github.com/honato11/chromecast-player"
 }

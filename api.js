@@ -182,4 +182,18 @@ Api.prototype.getProgress = function() {
   return this.tlHelper.getProgress();
 };
 
+Api.prototype.setSubtitlesOff = function(cb) {
+  this.sessionRequest({
+    type: 'EDIT_TRACKS_INFO',
+    activeTrackIds: [] // turn off subtitles.
+  }, cb);
+};
+
+Api.prototype.setSubtitlesOn = function(cb) {
+  this.sessionRequest({
+    type: 'EDIT_TRACKS_INFO',
+    activeTrackIds: [1] // turn off subtitles.
+  }, cb);
+};
+
 module.exports = Api;
