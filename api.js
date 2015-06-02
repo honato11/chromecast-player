@@ -55,6 +55,8 @@ var Api = function(client, session) {
   this.tlHelper.on('position', onPosition);
 };
 
+console.log("DBX: using jtChromecast-player...");
+
 Api.APP_ID = 'CC1AD845';
 
 inherits(Api, Application);
