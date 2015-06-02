@@ -84,7 +84,7 @@ Api.prototype.updateStatus = function(cb) {
 };
 
 Api.prototype.load = function(opts, cb) {
-  debug("DBX: load invoked...");
+  console.log("DBX: load invoked...");
   var options = {
     type: 'LOAD',
     autoplay: false, //opts.autoplay,

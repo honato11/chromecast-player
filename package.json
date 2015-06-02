@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "jtChromecast-player",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Simple Chromecast player. Forked from xat/chromecast-player and added support to switch off/on the subtitles",
   "main": "index.js",
   "scripts": {
