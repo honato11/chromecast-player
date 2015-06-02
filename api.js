@@ -55,8 +55,6 @@ var Api = function(client, session) {
   this.tlHelper.on('position', onPosition);
 };
 
-console.log("DBX: using jtChromecast-player...");
-
 Api.APP_ID = 'CC1AD845';
 
 inherits(Api, Application);
@@ -86,10 +84,9 @@ Api.prototype.updateStatus = function(cb) {
 };
 
 Api.prototype.load = function(opts, cb) {
-  console.log("DBX: load invoked...");
   var options = {
     type: 'LOAD',
-    autoplay: false, //opts.autoplay,
+    autoplay: opts.autoplay,
     currentTime: opts.startTime,
     activeTrackIds: opts.activeTrackIds
   };
