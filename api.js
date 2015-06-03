@@ -182,10 +182,6 @@ Api.prototype.getProgress = function() {
   return this.tlHelper.getProgress();
 };
 
-Api.prototype.leave = function(cb) {
-  this.sessionRequest({ type: 'LEAVE' }, cb);
-};
-
 Api.prototype.setSubtitlesOff = function(cb) {
   this.sessionRequest({
     type: 'EDIT_TRACKS_INFO',
